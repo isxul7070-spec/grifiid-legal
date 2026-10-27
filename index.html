@@ -1,97 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GriFiid — Privacy Policy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GriFiid — rental homes in Canada</title>
+<meta name="description" content="GriFiid is a free app for finding and listing rental homes in Canada. Privacy policy, terms of service, and how to delete your account.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A1A2F">
 <style>
-  :root { --red:#A81414; --navy:#0A1A2F; --text:#1F2937; --sub:#6B7280; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--text); line-height:1.7; background:#fff; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
-  header { display:flex; align-items:center; gap:12px; padding-bottom:20px; border-bottom:3px solid var(--red); margin-bottom:28px; }
-  .mark { width:44px; height:44px; border-radius:10px; }
-  .brand { font-size:26px; font-weight:900; }
-  .brand .gri { color:var(--red); } .brand .fiid { color:var(--navy); }
-  h1 { font-size:26px; color:var(--navy); margin:10px 0 4px; }
-  .date { color:var(--sub); font-size:14px; margin-bottom:26px; }
-  h2 { font-size:19px; color:var(--navy); margin:28px 0 8px; }
-  p, li { font-size:15.5px; margin-bottom:10px; }
-  ul { padding-left:22px; margin-bottom:12px; }
-  .box { background:#FEF2F2; border:1px solid #FECACA; border-radius:12px; padding:16px 18px; margin:18px 0; }
-  a { color:var(--red); font-weight:600; }
-  nav { margin-bottom:24px; font-size:14px; }
-  footer { margin-top:48px; padding-top:16px; border-top:1px solid #E5E7EB; color:var(--sub); font-size:13px; }
+:root {
+  --red: #A81414;
+  --link: #A81414;
+  --navy: #0A1A2F;
+  --ink: #111820;
+  --sub: #5A6676;
+  --rule: #E3E7EC;
+  --wash: #F7F8FA;
+  --page: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link: #F08A8A;
+    --ink: #E8ECF1;
+    --sub: #9AA6B4;
+    --rule: #1E3049;
+    --wash: #0E2138;
+    --page: #0A1A2F;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+header {
+  background: var(--navy);
+  padding: 22px 16px;
+}
+.bar {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.wordmark {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wordmark span { color: var(--red); }
+.tagline { color: #8FA0B4; font-size: 14px; margin-left: auto; }
+nav {
+  border-bottom: 1px solid var(--rule);
+  background: var(--wash);
+  padding: 0 16px;
+}
+nav .bar { gap: 20px; padding: 12px 0; }
+nav a {
+  color: var(--sub);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav a:hover { color: var(--link); }
+nav a[aria-current="page"] { color: var(--link); }
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px 72px;
+}
+h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.5px; margin: 8px 0 18px; }
+h2 {
+  font-size: 21px;
+  margin: 38px 0 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+h3 { font-size: 17px; margin: 26px 0 8px; }
+p, li { color: var(--ink); }
+a { color: var(--link); }
+hr { display: none; }
+ul { padding-left: 22px; }
+li { margin: 7px 0; }
+code {
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 15.5px;
+  display: block;
+  overflow-x: auto;
+}
+th, td {
+  border: 1px solid var(--rule);
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--wash); font-size: 14px; text-transform: uppercase; letter-spacing: 0.4px; }
+ol { padding-left: 22px; }
+ol li { margin: 10px 0; }
+.card {
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--link);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 24px 0;
+}
+.card p:first-child { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 24px 16px 48px;
+  color: var(--sub);
+  font-size: 14px;
+}
+footer .bar { display: block; }
+footer a { color: var(--sub); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <img class="mark" src="grifiid-mark.png?v=2" alt="GriFiid logo">
-    <div class="brand"><span class="gri">Gri</span><span class="fiid">Fiid</span></div>
-  </header>
-  <nav><a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a> · <a href="#account-deletion">Account Deletion</a></nav>
-
-  <h1>Privacy Policy</h1>
-  <p class="date">Effective date: July 8, 2026</p>
-
-  <p>GriFiid ("we", "us") is a rental listings app that connects renters and landlords in Canada. This policy explains what information we collect, how we use it, and the choices you have. By using GriFiid you agree to this policy.</p>
-
-  <h2>1. Information we collect</h2>
-  <ul>
-    <li><strong>Account information:</strong> your name, email address, date of birth, and password (stored in hashed form). If you sign in with Google, we receive your name and email from Google.</li>
-    <li><strong>Profile information:</strong> optional phone number and profile photo.</li>
-    <li><strong>Listings:</strong> property details, photos, prices, and locations you post.</li>
-    <li><strong>Messages:</strong> conversations you have with other users inside the app.</li>
-    <li><strong>Verification documents:</strong> if you request a verified-landlord badge, a photo of your government ID. These are stored in a private, access-controlled bucket and used only to verify your identity.</li>
-    <li><strong>Approximate location:</strong> if you grant permission, your device location to show nearby listings. We do not track your location in the background.</li>
-    <li><strong>Push token:</strong> a device identifier used to deliver message notifications.</li>
-  </ul>
-
-  <h2>2. How we use your information</h2>
-  <ul>
-    <li>To operate the app: show listings, enable chat between renters and landlords, and send notifications you've enabled.</li>
-    <li>To keep the community safe: reviewing reports, enforcing blocks, and verifying landlord identities.</li>
-    <li>To respond to support requests.</li>
-  </ul>
-  <p>We do <strong>not</strong> sell your personal information, and we do not use it for third-party advertising.</p>
-
-  <h2>3. Sharing</h2>
-  <ul>
-    <li><strong>Other users:</strong> your name, profile photo, verified badge, and the listings you post are visible to other users. Your email, birthday, and ID documents are never shown to other users.</li>
-    <li><strong>Service providers:</strong> our infrastructure runs on Supabase (database, authentication, file storage) and Expo (app delivery and push notifications). They process data on our behalf under their own security commitments.</li>
-    <li><strong>Legal:</strong> we may disclose information if required by law.</li>
-  </ul>
-
-  <h2>4. Data retention</h2>
-  <p>Your data is kept while your account is active. When you delete your account, your profile, listings, favorites, conversations, messages, and verification requests are permanently deleted. Residual copies in backups are purged on the backup rotation schedule.</p>
-
-  <h2 id="account-deletion">5. Account deletion</h2>
-  <div class="box">
-    <p><strong>You can delete your GriFiid account and associated data at any time:</strong></p>
-    <ul>
-      <li><strong>In the app:</strong> Settings → Danger Zone → tap the delete (trash) icon → confirm. Deletion is immediate and permanent.</li>
-      <li><strong>Without the app:</strong> email <a href="mailto:isxul7070@gmail.com?subject=GriFiid%20Account%20Deletion%20Request">isxul7070@gmail.com</a> with the subject "Account Deletion Request" from your registered email address, and we will delete your account within 30 days.</li>
-    </ul>
-    <p>Deletion removes your account, profile, listings, favorites, messages, and ID verification data.</p>
+<header>
+  <div class="bar">
+    <a class="wordmark" href="index.html"><span>Gri</span>Fiid</a>
+    <span class="tagline">Find. Connect. Live.</span>
   </div>
-
-  <h2>6. Your rights</h2>
-  <p>Depending on where you live (including under Canada's PIPEDA), you may have the right to access, correct, or delete your personal information. Contact us at the email below to exercise these rights.</p>
-
-  <h2>7. Age requirement</h2>
-  <p>GriFiid is for adults only. You must be at least 18 years old to create an account, and we do not knowingly collect data from anyone under 18. Sign-up requires a birthday indicating age 18 or older.</p>
-
-  <h2>8. Security</h2>
-  <p>Data is encrypted in transit (TLS). Database access is protected by row-level security so users can only access their own private data. ID documents are stored in a private bucket accessible only to you and our review process.</p>
-
-  <h2>9. Changes</h2>
-  <p>We may update this policy. Material changes will be announced in the app, and the effective date above will be updated.</p>
-
-  <h2>10. Contact</h2>
-  <p>Questions or requests: <a href="mailto:isxul7070@gmail.com">isxul7070@gmail.com</a></p>
-
-  <footer>© 2026 GriFiid. All rights reserved.</footer>
+</header>
+<nav>
+  <div class="bar">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="delete-account.html">Delete your account</a>
+  </div>
+</nav>
+<main>
+<h1>GriFiid</h1>
+<p>GriFiid is a free app for finding and listing rental homes in Canada. It lets
+people advertise a rental home and lets people looking for one find it and
+message the advertiser. It is not a landlord, a property manager or an agent,
+and it does not handle rent or deposits.</p>
+<p>It is published by Abdiqadir Aden of Winnipeg, Manitoba, Canada, and is
+available on Google Play as <code>com.grifiid.app</code>.</p>
+<div class="card">
+  <p><strong>Want to delete your account?</strong> You can do it yourself in the
+  app under Settings, and you can do it without the app if you have lost access.
+  <a href="delete-account.html">Both routes are explained here</a>.</p>
 </div>
+<h2>Documents</h2>
+<ul>
+  <li><a href="privacy.html">Privacy Policy</a> — what we collect, why, who else
+      handles it, how long we keep it, and your rights.</li>
+  <li><a href="terms.html">Terms of Service</a> — the agreement between you and
+      GriFiid.</li>
+  <li><a href="delete-account.html">Delete your account</a> — how to remove your
+      account and its data.</li>
+</ul>
+<h2>Contact</h2>
+<p>Email <a href="mailto:isxul7070@gmail.com">isxul7070@gmail.com</a>.</p>
+</main>
+<footer>
+  <div class="bar">
+    <p>GriFiid is operated by Abdiqadir Aden, Winnipeg, Manitoba, Canada.
+       Contact <a href="mailto:isxul7070@gmail.com">isxul7070@gmail.com</a>.</p>
+    <p>These pages are generated from the app's own policy documents, so they
+       match the text shown inside the app.</p>
+  </div>
+</footer>
 </body>
 </html>

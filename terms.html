@@ -1,88 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GriFiid — Terms &amp; Conditions</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — GriFiid</title>
+<meta name="description" content="The agreement between you and GriFiid.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A1A2F">
 <style>
-  :root { --red:#A81414; --navy:#0A1A2F; --text:#1F2937; --sub:#6B7280; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--text); line-height:1.7; background:#fff; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
-  header { display:flex; align-items:center; gap:12px; padding-bottom:20px; border-bottom:3px solid var(--red); margin-bottom:28px; }
-  .mark { width:44px; height:44px; border-radius:10px; }
-  .brand { font-size:26px; font-weight:900; }
-  .brand .gri { color:var(--red); } .brand .fiid { color:var(--navy); }
-  h1 { font-size:26px; color:var(--navy); margin:10px 0 4px; }
-  .date { color:var(--sub); font-size:14px; margin-bottom:26px; }
-  h2 { font-size:19px; color:var(--navy); margin:28px 0 8px; }
-  p, li { font-size:15.5px; margin-bottom:10px; }
-  ul { padding-left:22px; margin-bottom:12px; }
-  a { color:var(--red); font-weight:600; }
-  nav { margin-bottom:24px; font-size:14px; }
-  footer { margin-top:48px; padding-top:16px; border-top:1px solid #E5E7EB; color:var(--sub); font-size:13px; }
+:root {
+  --red: #A81414;
+  --link: #A81414;
+  --navy: #0A1A2F;
+  --ink: #111820;
+  --sub: #5A6676;
+  --rule: #E3E7EC;
+  --wash: #F7F8FA;
+  --page: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link: #F08A8A;
+    --ink: #E8ECF1;
+    --sub: #9AA6B4;
+    --rule: #1E3049;
+    --wash: #0E2138;
+    --page: #0A1A2F;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+header {
+  background: var(--navy);
+  padding: 22px 16px;
+}
+.bar {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.wordmark {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wordmark span { color: var(--red); }
+.tagline { color: #8FA0B4; font-size: 14px; margin-left: auto; }
+nav {
+  border-bottom: 1px solid var(--rule);
+  background: var(--wash);
+  padding: 0 16px;
+}
+nav .bar { gap: 20px; padding: 12px 0; }
+nav a {
+  color: var(--sub);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav a:hover { color: var(--link); }
+nav a[aria-current="page"] { color: var(--link); }
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px 72px;
+}
+h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.5px; margin: 8px 0 18px; }
+h2 {
+  font-size: 21px;
+  margin: 38px 0 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+h3 { font-size: 17px; margin: 26px 0 8px; }
+p, li { color: var(--ink); }
+a { color: var(--link); }
+hr { display: none; }
+ul { padding-left: 22px; }
+li { margin: 7px 0; }
+code {
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 15.5px;
+  display: block;
+  overflow-x: auto;
+}
+th, td {
+  border: 1px solid var(--rule);
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--wash); font-size: 14px; text-transform: uppercase; letter-spacing: 0.4px; }
+ol { padding-left: 22px; }
+ol li { margin: 10px 0; }
+.card {
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--link);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 24px 0;
+}
+.card p:first-child { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 24px 16px 48px;
+  color: var(--sub);
+  font-size: 14px;
+}
+footer .bar { display: block; }
+footer a { color: var(--sub); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <img class="mark" src="grifiid-mark.png?v=2" alt="GriFiid logo">
-    <div class="brand"><span class="gri">Gri</span><span class="fiid">Fiid</span></div>
-  </header>
-  <nav><a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a></nav>
-
-  <h1>Terms &amp; Conditions</h1>
-  <p class="date">Effective date: July 8, 2026</p>
-
-  <p>Welcome to GriFiid. By creating an account or using the app, you agree to these terms. If you do not agree, please do not use GriFiid.</p>
-
-  <h2>1. What GriFiid is</h2>
-  <p>GriFiid is a platform that connects renters and landlords. We do not own, manage, inspect, or endorse any property listed on the app, and we are not a party to any rental agreement between users.</p>
-
-  <h2>2. Eligibility</h2>
-  <p>You must be at least 18 years old to use GriFiid. Rental agreements are binding contracts, and you must have the legal capacity to enter into them.</p>
-
-  <h2>3. Your account</h2>
-  <ul>
-    <li>Provide accurate information and keep your credentials secure.</li>
-    <li>You are responsible for activity on your account.</li>
-    <li>You can delete your account at any time (Settings → Danger Zone, or see our <a href="index.html#account-deletion">account deletion instructions</a>).</li>
-  </ul>
-
-  <h2>4. Listings and content</h2>
-  <ul>
-    <li>Landlords are solely responsible for the accuracy, legality, and availability of their listings.</li>
-    <li>Do not post false, misleading, discriminatory, or unlawful content.</li>
-    <li>You keep ownership of the content you post, but grant GriFiid a licence to display it within the service.</li>
-    <li>The "Verified" badge means an ID review was completed; it is not a guarantee of any person's conduct.</li>
-  </ul>
-
-  <h2>5. Conduct</h2>
-  <ul>
-    <li>No harassment, hate speech, spam, or scams.</li>
-    <li>Use the in-app tools to report inappropriate content or users, and to block users you don't want to hear from.</li>
-    <li>We may remove content or suspend accounts that violate these terms.</li>
-  </ul>
-
-  <h2>6. Payments</h2>
-  <p>GriFiid does not process rent payments or deposits. Any payment arrangements are made directly between renter and landlord, at their own risk. Never send money to someone you have not verified independently.</p>
-
-  <h2>7. Disclaimers</h2>
-  <p>GriFiid is provided "as is". To the maximum extent permitted by law, we disclaim all warranties and are not liable for disputes, losses, or damages arising from interactions or agreements between users, or from inaccurate listings.</p>
-
-  <h2>8. Termination</h2>
-  <p>You may stop using GriFiid at any time. We may suspend or terminate accounts that violate these terms or applicable law.</p>
-
-  <h2>9. Changes</h2>
-  <p>We may update these terms. Material changes will be announced in the app; continued use after changes take effect means you accept them.</p>
-
-  <h2>10. Governing law</h2>
-  <p>These terms are governed by the laws of Canada and the province in which we operate.</p>
-
-  <h2>11. Contact</h2>
-  <p>Questions: <a href="mailto:isxul7070@gmail.com">isxul7070@gmail.com</a></p>
-
-  <footer>© 2026 GriFiid. All rights reserved.</footer>
-</div>
+<header>
+  <div class="bar">
+    <a class="wordmark" href="index.html"><span>Gri</span>Fiid</a>
+    <span class="tagline">Find. Connect. Live.</span>
+  </div>
+</header>
+<nav>
+  <div class="bar">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" aria-current="page">Terms of Service</a>
+        <a href="delete-account.html">Delete your account</a>
+  </div>
+</nav>
+<main>
+<h1 id="grifiid-terms-of-service">GriFiid Terms of Service</h1>
+<p><strong>Last updated: 19 August 2026</strong></p>
+<p>These terms are the agreement between you and GriFiid. Please read them — they explain what you can expect from us, what we expect from you, and the limits of our responsibility. By creating an account or using the app, you agree to them.</p>
+<p><strong>Who we are.</strong> GriFiid is operated by Abdiqadir Aden, a sole proprietor based in Winnipeg, Manitoba, Canada. Contact: <strong>abdiqadiraden710@gmail.com</strong>.</p>
+<p><strong>What GriFiid is.</strong> A free app that lets people advertise rental homes in Canada and lets people looking for a home find them and message the advertiser. That is all it is.</p>
+<p><strong>What GriFiid is not.</strong> We are not a landlord, a property manager, a real estate agent, or a party to any rental agreement. We do not own, inspect, verify, endorse or manage any property listed in the app. We do not handle rent, deposits or any other payment.</p>
+<hr>
+<h2 id="1-who-can-use-grifiid">1. Who can use GriFiid</h2>
+<p>You must be at least 18 years old. We ask for your date of birth when you sign up to check this. If you sign in with Google we will ask you separately, because Google does not tell us.</p>
+<p>You need one account, registered with accurate information, and you are responsible for what happens under it. Keep your password to yourself. If you think someone else has access, change it and tell us.</p>
+<p>You may not create an account if we have previously removed one of yours.</p>
+<hr>
+<h2 id="2-the-app-is-free">2. The app is free</h2>
+<p>GriFiid costs nothing to use. There are no fees, no subscriptions, no commission and no ads. We do not process payments of any kind.</p>
+<p>Any money that changes hands — rent, a deposit, an application fee — is strictly between you and the other person, outside the app. We are not involved and we cannot help you recover it. See section 5.</p>
+<hr>
+<h2 id="3-listings-must-be-honest">3. Listings must be honest</h2>
+<p>If you post a listing, you are promising that:</p>
+<ul>
+  <li>The property is real, and you have the right to rent it out.</li>
+  <li>The photos are of that property, and are current.</li>
+  <li>The price, size, address area, availability and features are accurate.</li>
+  <li>You will take the listing down, or update it, once it is no longer available or accurate.</li>
+</ul>
+<p>Everything in your listing is your responsibility. We do not verify listings before they appear.</p>
+<hr>
+<h2 id="4-things-you-must-not-do">4. Things you must not do</h2>
+<p>You must not:</p>
+<ul>
+  <li><strong>Post a fake listing, or a listing for a property you do not control.</strong></li>
+  <li><strong>Run a rental scam</strong> — asking for a deposit, first month's rent, an &quot;application fee&quot; or &quot;viewing fee&quot; before someone has seen the property or signed anything, or asking to be paid by wire transfer, e-transfer to a stranger, gift card or cryptocurrency. This is the most common way people get hurt on apps like this one, and we treat it as grounds for immediate removal.</li>
+  <li>Post the same property many times to push it up the list, or post listings that are not really available.</li>
+  <li>Misrepresent who you are, or pretend to be someone else.</li>
+  <li>Discriminate against anyone on a ground protected by the Manitoba <em>Human Rights Code</em> or the Canadian <em>Human Rights Act</em> — including race, national or ethnic origin, religion, age, sex, sexual orientation, gender identity, marital or family status, disability, or source of income — whether in a listing or in messages.</li>
+  <li>Harass, threaten, abuse or stalk anyone.</li>
+  <li>Post sexual content, content involving minors, hate speech, or anything that encourages violence or illegal activity.</li>
+  <li>Post someone else's personal information without their permission.</li>
+  <li>Upload anything you do not have the right to upload, including other people's photos.</li>
+  <li>Upload malware, or try to break, overload, scrape or reverse-engineer the app or our servers.</li>
+  <li>Use the app to advertise anything other than a rental home.</li>
+</ul>
+<p>If you see any of this, report it — see section 7.</p>
+<hr>
+<h2 id="5-content-you-post-and-our-role">5. Content you post, and our role</h2>
+<p><strong>Your content stays yours.</strong> You keep ownership of your listings, photos and messages. By posting them you give us permission to store them, and to display them in the app to the people they are meant for — listings publicly, messages to the person you sent them to. This permission ends when you delete the content or your account, except for copies another user already received.</p>
+<p><strong>We do not check content before it is posted.</strong> GriFiid carries content created by users. Listings, photos, descriptions and messages are the responsibility of the person who posted them, not us. We do not verify that a property exists, that a price is real, that a person is who they claim, or that anything said in a message is true. A verified badge means we have seen a government ID, compared it to a selfie, and found both to match the name on the account — nothing more. <strong>It is not a guarantee of honesty and you should not treat it as one.</strong></p>
+<p><strong>Protect yourself.</strong> Before paying anyone anything: view the property in person, confirm the person you are dealing with controls it, and never send money to someone you have not met for a place you have not seen.</p>
+<p><strong>Our responsibility is limited.</strong> To the fullest extent the law allows, GriFiid is provided &quot;as is&quot;, without warranties of any kind. We are not liable for any loss you suffer from dealing with another user — including fraud, a misleading listing, a rental that falls through, money you send to someone, or anything that happens at a viewing or after you move in. We are not liable for indirect or consequential losses. Where the law does not permit us to exclude liability entirely, our total liability to you is limited to CAD $100.</p>
+<p>Nothing in these terms limits liability that cannot lawfully be limited, including for fraud or personal injury caused by our negligence, and nothing here takes away consumer rights you have under Manitoba or Canadian law that cannot be waived.</p>
+<hr>
+<h2 id="6-verification-badges">6. Verification badges</h2>
+<p>Landlords may optionally submit a government ID and a selfie to receive a verified badge. One of us looks at the two pictures side by side, checks them against the name on the account, and then approves or rejects the request. No software scans or measures your face, and we build no record of its measurements.</p>
+<p><strong>Both photos are erased the moment we approve or reject the request</strong> — see the Privacy Policy. All that stays behind is the outcome.</p>
+<p>We may refuse or withdraw a badge at any time, and a badge does not make us responsible for anything that user does.</p>
+<hr>
+<h2 id="7-blocking-and-reporting">7. Blocking and reporting</h2>
+<p>Every listing can be reported, and every conversation can be reported or the other person blocked. Blocking stops them messaging you and hides the conversation. Blocking is enforced by our servers, so it works even if the other person is using an old version of the app.</p>
+<p>Reports come to us. We read them and may remove content, suspend an account, or do nothing if there is nothing wrong — we will use our judgement. To stop one person flooding the queue, there is a limit on how many reports an account can file in an hour, and reporting the same thing twice does not file a second report.</p>
+<p>Please report scams and fake listings. It is the main way we find them.</p>
+<hr>
+<h2 id="8-suspending-or-removing-accounts">8. Suspending or removing accounts</h2>
+<p>We may remove content or suspend or delete an account if we believe it breaks these terms, puts other users at risk, or is being used for fraud. Where it is reasonable to do so we will explain why, but we may act immediately when someone is at risk.</p>
+<p>A suspended account cannot post listings or send messages. If you think we got it wrong, email <strong>abdiqadiraden710@gmail.com</strong> and we will look again.</p>
+<hr>
+<h2 id="9-deleting-your-account">9. Deleting your account</h2>
+<p>You can delete your account at any time from <strong>Settings → Delete Account</strong>. It is immediate and permanent, and it removes your profile, listings, saved listings and conversations. Messages you already sent remain in the other person's copy. See the Privacy Policy for the full detail.</p>
+<hr>
+<h2 id="10-privacy">10. Privacy</h2>
+<p>Our <a href="privacy.html">Privacy Policy</a> explains what we collect and what we do with it. It forms part of these terms.</p>
+<hr>
+<h2 id="11-changes-to-these-terms">11. Changes to these terms</h2>
+<p>We may update these terms. If we do, we will change the date at the top and show a notice in the app. If a change is significant we will ask you to agree to it before you carry on using GriFiid. If you do not agree, you can delete your account.</p>
+<hr>
+<h2 id="12-governing-law">12. Governing law</h2>
+<p>These terms are governed by the laws of the Province of Manitoba and the federal laws of Canada that apply there. Any dispute will be dealt with by the courts of Manitoba, and you and we both agree to those courts having jurisdiction. If you are a consumer, this does not deprive you of the protection of the law of the province where you live.</p>
+<p>If any part of these terms turns out to be unenforceable, the rest still applies.</p>
+<hr>
+<h2 id="13-contact">13. Contact</h2>
+<p>Abdiqadir Aden GriFiid Winnipeg, Manitoba, Canada <strong>abdiqadiraden710@gmail.com</strong></p>
+</main>
+<footer>
+  <div class="bar">
+    <p>GriFiid is operated by Abdiqadir Aden, Winnipeg, Manitoba, Canada.
+       Contact <a href="mailto:isxul7070@gmail.com">isxul7070@gmail.com</a>.</p>
+    <p>These pages are generated from the app's own policy documents, so they
+       match the text shown inside the app.</p>
+  </div>
+</footer>
 </body>
 </html>
